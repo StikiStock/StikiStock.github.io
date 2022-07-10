@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="p-0 m-0 w-full h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CDN Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        mode: 'jit',
+          theme: {
+            extend: {
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+      }
+
+      @keyframes blur_out {
+        from {
+          backdrop-filter: blur(24px);
+        }
+        to {
+          backdrop-filter: blur(0px);
+        }
+      }
+
+    </style>
+</head>
+<body class="p-0 m-0">
+
+  <div class="w-full h-full fixed bg-[url('./util/flowers.jpg')] bg-no-repeat bg-cover"></div>
+
+  <div class="w-full h-full fixed backdrop-blur-3xl"></div>
+
+
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-sm sm:max-w-[33rem] p-[1.2em]">
+
+      <div class="sm:flex">
+
+        <div class="flex sm:mr-[0.5rem] mr-[0rem]">
+          <img class="h-[7rem] w-auto m-auto" src="./util/Arya2.png" alt="Arya Azizi" />
+        </div>
+        
+        <div class="flex-col flex flex-1">
+
+          <div class="flex my-2 mx-5 justify-between sm:justify-start">
+            <span class="text-xl font-bold text-gray-100">Arya Azizi</span>
+            <span class="my-auto text-md text-gray-200 sm:ml-5 ml-0">Front-End</span>
+          </div>
+
+          <div class="flex flex-1">
+            <span class="mt-2 sm:my-auto mx-5 text-gray-300 sm:text-gray-400 tracking-tight text-center sm:text-left">An enthusiastic web designer, fanatic gamer,
+              night owl, geek, introvert, talkative, human. <a href="https://t.me/stikistock" class="p-0 m-0 w-16 h-16"><img src="./util/telegram.svg" alt="Contact" class="inline-block w-[16px] h-auto invert opacity-[65%] ml-[0.35rem]"></a>
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div class="w-full h-full fixed pointer-events-none" style="animation: blur_out 450ms linear"></div>
+
+</body>
+
+</html> <!--18px border radius-->
