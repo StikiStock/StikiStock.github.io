@@ -3,13 +3,13 @@
 <head>
     
     <meta name="author" content="Arya Azizi">
-        <meta name="designer" content="Arya Azizi's Personal Website (Stiki Stock)">
-        <meta name="description" content="Arya Azizi - @xStiki - Home">
+        <meta name="designer" content="Arya Azizi \ Front End">
+        <meta name="description" content="Arya Azizi \ Home">
         <meta name="keywords" content="Stiki Stock, Stiki, xStiki, Stock, Html, CSS, JavaScript,
     Alfie Stock, Alfie, Web Developer, Web Designer, Eye Corp, Front-end, Front end, Design,
     Stiki S., Ariatools, Small, Small Stiki, AriaToolsCo, Arya Azizi, Azizi, Arya">
     
-            <meta name="title" content="Arya Azizi - Front end">
+        <meta name="title" content="Arya Azizi - Front end">
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,9 +31,9 @@
             "@context": "https://schema.org/",
             "@type": "Person",
             "name": "Arya Azizi",
-            "url": "https://stiki.ir",
-            "email": "contact@stiki.ir",
-            "sameAs": "https://stiki.ir",
+            "url": "https://stikistock.github.io",
+            "email": "papastiki7@gmail.com",
+            "sameAs": "https://stikistock.github.io",
             "jobTitle": "Web Developer",
             "worksFor": {
                 "@type": "Organization",
@@ -60,21 +60,31 @@
         }
       }
 
+      @keyframes moveUp {
+        from {
+          transform: translate(-50%, 100%) scale(0.35);
+        }
+        to {
+          transform: translate(-50%, -50%) scale(1);
+          
+        }
+      }
+
     </style>
 </head>
-<body class="p-0 m-0">
+<body class="p-0 m-0 overflow-hidden">
 
   <div class="w-full h-full fixed bg-[url('./util/flowers.jpg')] bg-no-repeat bg-cover"></div>
 
-  <div class="w-full h-full fixed backdrop-blur-3xl"></div>
+  <div class="w-full h-full fixed backdrop-blur-2xl"></div>
 
 
-    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-sm sm:max-w-[33rem] p-[1.2em]">
+    <div style="animation: moveUp 650ms forwards ease-out" class="rounded-[18px] shadow-xl backdrop-blur-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-sm sm:max-w-[33rem] p-[1em]">
 
-      <div class="sm:flex">
+      <div class="sm:flex ">
 
         <div class="flex sm:mr-[0.5rem] mr-[0rem]">
-          <img class="h-[7rem] w-auto m-auto" src="./util/Arya2.png" alt="Arya Azizi" />
+          <img class="w-[4.5rem] h-auto m-auto" src="./util/Arya2.png" alt="Arya Azizi" />
         </div>
         
         <div class="flex-col flex flex-1">
@@ -86,7 +96,7 @@
 
           <div class="flex flex-1">
             <span class="mt-2 sm:my-auto mx-5 text-gray-300 sm:text-gray-400 tracking-tight text-center sm:text-left">An enthusiastic web designer, fanatic gamer,
-              night owl, geek, introvert, talkative, human. <a href="https://t.me/stikistock" class="p-0 m-0 w-16 h-16"><img src="./util/telegram.svg" alt="Contact" class="inline-block w-[16px] h-auto invert opacity-[65%] ml-[0.35rem]"></a>
+              night owl, geek, introvert, talkative, human. <a href="https://t.me/stikistock" class="p-[0.1rem] w-16 h-16 ml-[0.35rem] group"><img src="./util/telegram.svg" alt="Contact" class="transition-all group-hover:translate-x-[0.15rem] group-hover:-translate-y-[0.15rem] inline-block w-[16px] h-auto invert opacity-[65%]"></a>
             </span>
           </div>
 
@@ -96,7 +106,7 @@
       
     </div>
 
-    <div class="w-full h-full fixed pointer-events-none" style="animation: blur_out 450ms linear"></div>
+    <div class="w-full h-full fixed pointer-events-none" style="animation: blur_out 500ms linear"></div>
 
 </body>
 
